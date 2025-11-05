@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Parallel Test Suite">
+
+    <listeners>
+        <listener class-name="testComponents.Listeners"/>
+    </listeners>
+    <test thread-count="2" verbose="2" preserve-order="true" name="Submit Order">
+        <classes>
+            <class name="pageTests.SubmitOrderTest"/>
+        </classes>
+    </test>
+    
+    <test thread-count="2" name="Error Validation Test">
+        <classes>
+            <class name="pageTests.ErrorValidationsTest"/>
+        </classes>
+    </test>
+</suite>
