@@ -20,7 +20,6 @@ import java.util.List;
 
 public class StepDefImpl extends BaseTest {
 
-
     public ProductCataloguePage productCataloguePage;
     public CheckoutPage checkoutPage;
     public ConfirmationPage confirmationPage;

@@ -77,8 +77,6 @@ public class BaseTest {
         String screenshotDir = System.getProperty("user.dir") + "\\target\\extent-reports\\screenshots\\";
         File file = new File(screenshotDir + testCaseName + ".png");
 
-        //file.getParentFile().mkdirs();
-        //FileUtils.copyFile(source, file);
         FileUtils.moveFile(source, file);
         return "screenshots/" + testCaseName + ".png";
     }
